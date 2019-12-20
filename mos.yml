@@ -10,6 +10,7 @@ mongoose_os_version: ${mos.version}
 config_schema:
   - ["mqtt.server", "iot.eclipse.org:1883"]
   - ["i2c.enable", true]
+  - ["app.dht.pin", "i", 21, {title: "GPIO pin for DHT22 sensor"}]
 
 tags:
   - js
@@ -20,3 +21,4 @@ filesystem:
 libs:
   - origin: https://github.com/mongoose-os-libs/boards
   - origin: https://github.com/mongoose-os-libs/js-demo-bundle
+  - origin: https://github.com/mongoose-os-libs/dht
